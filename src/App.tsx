@@ -1,5 +1,5 @@
-import './main.css'
+import { AuthPage } from './pages/AuthPage'
 
 export const App = () => {
-  return <div>it is future project</div>
+  return <AuthPage />
 }

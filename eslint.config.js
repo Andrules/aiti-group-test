@@ -12,6 +12,17 @@ import simpleImportSort from 'eslint-plugin-simple-import-sort'
 import tseslint from 'typescript-eslint'
 
 export default [
+  {
+    ignores: [
+      '**/node_modules/**',
+      '**/dist/**',
+      '**/build/**',
+      '**/coverage/**',
+      '**/*.min.*',
+      '**/*.d.ts'
+    ]
+  },
+
   js.configs.recommended,
   ...tseslint.configs.recommended, //remove this line if you do not use TypeScript
 
