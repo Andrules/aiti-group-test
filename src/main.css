@@ -5,6 +5,45 @@
   --font-family-sans: 'Inter', sans-serif;
 }
 
+@theme {
+  --gray1: #EDEDED;
+}
+
+@layer utilities {
+  .__logo-shadow {
+    box-shadow: 0 12px 8px 0 rgba(0, 0, 0, 0.03),
+                0 0 0 2px rgba(255, 255, 255, 1);
+  }
+
+  .__logo-bg-gradient {
+    background: linear-gradient(
+      0deg, 
+      rgba(35, 35, 35, 0) 50%, 
+      rgba(35, 35, 35, 0.06) 100%
+    ), white;
+  }
+
+  .__form-bg-gradient {
+    background: linear-gradient(
+      180deg, 
+      rgba(35, 35, 35, 0.03) 0%, 
+      rgba(35, 35, 35, 0.02) 18%, 
+      rgba(35, 35, 35, 0) 50%
+    );
+  }
+
+  .__form-shadow{
+    box-shadow: 0 24px 32px 0 rgba(0, 0, 0, 0.04);
+  }
+
+
+  .__flex-col-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 html {
   box-sizing: border-box;
   font-size: 16px;

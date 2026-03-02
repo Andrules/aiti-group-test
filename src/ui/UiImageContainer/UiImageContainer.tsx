@@ -14,8 +14,13 @@ export const UiImageContainer = ({
   picHeight
 }: UiImageContainerProps) => {
   return (
-    <div className={clsx('flex justify-center p-0', styles)}>
-      <img src={picUrl} height={picHeight ?? 24} width={picWidth ?? 24} />
+    <div className={clsx('flex justify-center items-center p-0', styles)}>
+      <img
+        src={picUrl}
+        height={picHeight ?? 24}
+        width={picWidth ?? 24}
+        className='w-full h-full object-cover'
+      />
     </div>
   )
 }
